@@ -16,13 +16,13 @@
 // filter patern (is much better and more superior than else if)
 const whatToDoForLunch = function(hungry, availableTime) {
   // console.log("I don't know what to do!"); 
-  if (hungry + availableTime < 20) {
+  if (availableTime < 20) {
     console.log("Pick up a light snack");
     return;
   }
 
   // availableTime is always greater than 20 at this point. 
-  if (hungry + availableTime < 30) {
+  if (availableTime < 30) {
     console.log("Cook a tasty meal");
     return;
   }
@@ -32,10 +32,8 @@ const whatToDoForLunch = function(hungry, availableTime) {
     return;
   }
 
-  if (hungry) {
-    console.log("Consider how much time you have for lunch.");
-    return;
-  }
+  console.log("Consider how much time you have for lunch.");
+  
 
 
 };
